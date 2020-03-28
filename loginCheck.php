@@ -22,8 +22,9 @@ $result = mysqli_query($con, $sql);
 
 if ($row = mysqli_fetch_array($result)) {
     $_SESSION['user_id'] = $row['user_id'];
-    $_SESSION['usre_name'] = $row['user_name'];
+    $_SESSION['user_name'] = $row['user_name'];
     $_SESSION['user_email'] = $row['user_email'];
+    $_SESSION['user_password'] = $password;
     $_SESSION['user_phone'] =  $phone;
     $_SESSION['user_image'] =  $row['user_image'];
     $_SESSION['user_role_id'] =   $row['user_role'];
